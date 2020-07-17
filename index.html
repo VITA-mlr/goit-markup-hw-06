@@ -60,17 +60,25 @@
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <a class="close-modal" data-modal-close>
+            <!-- <a class="close-modal" data-modal-close>
               <svg class="icon-close" width="30" height="30">
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
-            </a>
+            </a> -->
+
+            <button class="close-modal" data-modal-close></button>
 
             <h2>Оставьте свои данные, мы вам перезвоним</h2>
 
             <form action="" method="post">
               <div class="form-fild">
-                <input type="text" name="user-name" id="name" />
+                <input
+                  type="text"
+                  name="user-name"
+                  id="name"
+                  placeholder=" "
+                  autofocus
+                />
                 <label for="name">Имя</label>
                 <svg width="18" height="18">
                   <use href="./images/sprite.svg#icon-person-black"></use>
@@ -78,7 +86,7 @@
               </div>
 
               <div class="form-fild">
-                <input type="tel" name="user-tel" id="tel" />
+                <input type="tel" name="user-tel" id="tel" placeholder=" " />
                 <label for="tel">Телефон</label>
                 <svg width="18" height="18">
                   <use href="./images/sprite.svg#icon-phone-black"></use>
@@ -86,7 +94,12 @@
               </div>
 
               <div class="form-fild">
-                <input type="email" name="user-mail" id="email" />
+                <input
+                  type="email"
+                  name="user-mail"
+                  id="email"
+                  placeholder=" "
+                />
                 <label for="email">Почта</label>
                 <svg width="18" height="18">
                   <use href="./images/sprite.svg#icon-email-black"></use>
@@ -99,20 +112,27 @@
                   id="coment"
                   cols="50"
                   rows="4"
+                  placeholder=" "
                 ></textarea>
                 <label for="coment">Комментарий</label>
               </div>
             </form>
 
             <div class="checkbox">
-              <input type="checkbox" name="user-agreement" id="agreement" />
-              <label for="agreement"
-                >Соглашаюсь с рассылкой и принимаю
+              <label for="agreement" class="check-label">
+                <input
+                  class="check-input"
+                  type="checkbox"
+                  name="user-agreement"
+                  id="agreement"
+                />
+                <span class="chek-icon"></span>
+                Соглашаюсь с рассылкой и принимаю
                 <a href="" class="link-agreement">Условия договора</a>
               </label>
-              <svg width="16" height="15">
+              <!-- <svg width="16" height="15">
                 <use href="./images/sprite.svg#icon-checkbox"></use>
-              </svg>
+              </svg> -->
             </div>
 
             <div>
