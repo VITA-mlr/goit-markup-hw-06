@@ -105,6 +105,7 @@ p {
   letter-spacing: 0.06em;
   color: var(--hero-button-color);
   background-color: var(--menu-active-color);
+  outline: none;
 }
 
 .form .button {
@@ -402,6 +403,7 @@ p {
 }
 
 /* Modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -438,32 +440,32 @@ p {
 
 .close-modal {
   position: absolute;
+
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
+  padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: var(--hero-button-color);
-  background-image: url(../images/sprite-start.svg#icon-close);
-  fill: var(--logo-color);
-  background-repeat: no-repeat;
-  background-size: contain;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--hero-button-color);
+
+  fill: var(--header-menu-color);
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.close-modal:hover {
+.icon-close:hover {
   fill: var(--menu-active-color);
 }
-/* 
-.icon-close {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+
+.close-modal:focus {
+  outline: none;
+}
 
 .modal h2 {
   font-weight: 700;
@@ -549,14 +551,10 @@ textarea:not(:placeholder-shown) ~ label {
 .checkbox {
   position: relative;
   padding-bottom: 30px;
-
-  /* text-align: center; */
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-color);
-
-  /* outline: 1px solid red; */
 }
 
 .check-input {
@@ -570,25 +568,21 @@ textarea:not(:placeholder-shown) ~ label {
   margin-left: 36px;
 }
 
-.chek-icon {
+.check-icon {
   position: absolute;
   top: 4px;
-  left: 4px;
+  left: 12px;
   width: 16px;
   height: 15px;
-  /* margin-left: 12px; */
-  /* background-color: var(--hero-button-color); */
-  background-image: url(../images/sprite.svg#icon-checkbox);
+  background-image: url(../images/sprite.svg#Vector);
   fill: var(--header-menu-color);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.checkbox:hover svg,
-.checkbox:focus-within svg {
-  fill: var(--menu-active-color);
-}
-
-.checkbox:checked svg {
-  background-image: url(../images/sprite.svg#icon-active-checkbox);
+.check-input:checked + .check-icon {
+  background-image: url(../images/sprite.svg#Vector-active);
+  background-color: var(--menu-active-color);
 }
 
 .link-agreement {
