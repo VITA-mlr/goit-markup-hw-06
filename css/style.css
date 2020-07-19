@@ -574,14 +574,16 @@ textarea:not(:placeholder-shown) ~ label {
   left: 12px;
   width: 16px;
   height: 15px;
-  background-image: url(../images/sprite.svg#Vector);
+  /* background-image: url("../images/sprite.svg#icon-Vector"); */
+  background-image: url(../images/Vector.svg);
   fill: var(--header-menu-color);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .check-input:checked + .check-icon {
-  background-image: url(../images/sprite.svg#Vector-active);
+  /* background-image: url("../images/sprite.svg#icon-Vector-active"); */
+  background-image: url(../images/Vector-active.svg);
   background-color: var(--menu-active-color);
 }
 
